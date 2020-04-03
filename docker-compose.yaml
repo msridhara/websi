@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    image: msridharatrail
+    build: .
+    container_name: intellipaat_pic
+    restart: always
+#    volumes:
+#      - /home/ubuntu/webimage/images:/var/www/html
+#      - /home/ubuntu/webimage/index.html:/var/www/html/index.html
+    ports:
+      - "83:80"
